@@ -3,8 +3,8 @@ from contextlib import closing
 import pandas as pd
 import subprocess
 
-twitter_users = pd.read_csv('/Users/robertness/Documents/Civitech/Python/twitter_alert_bot/twitter_handles.csv')
-test_csv = '/Users/robertness/Documents/Civitech/Python/twitter_alert_bot/test.csv'
+twitter_users = pd.read_csv('/directory/to/the/csv/twitter_handles.csv')
+test_csv = '/directory/to/the/other/csv/twitter_alert_bot/test.csv'
 
 bearer_token = 'INSERT BEARER TOKEN HERE'
 
