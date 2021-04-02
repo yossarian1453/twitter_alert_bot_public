@@ -3,18 +3,18 @@ from contextlib import closing
 import pandas as pd
 import subprocess
 
-consumer_key = 'bCs3KjDixkdgew0WrHXTGDPe1'
-consumer_secret = 'iCY2EIFUUOMzpAUEa7JXWYhu9xjg8gqXXp2rhacsAPGrqnaJ0Y'
-access_token = '1358710907006779398-ztYTwvVQyJWKRKOqF4IaeHwhzfmtpz'
-access_token_secret= 'cBqB48bge67Iysm10FJGqSdzo1WPkLrAu0HEjWfsPZ7mb'
-bearer_token = 'AAAAAAAAAAAAAAAAAAAAAE2cMgEAAAAAxuksyrty6gvuuLMm6keHIr7cq8o%3DNMOcO1jCAKG4R22MPYQvFGJladaeGZDlPnUXDfNwj5HglKMJUS'
+consumer_key = 'insert consumer key here'
+consumer_secret = 'insert consumer secret here'
+access_token = 'insert access token here'
+access_token_secret = 'insert access token secret here'
+bearer_token = 'insert bearer token here'
 
-twitter_users = pd.read_csv('/Users/robertness/Documents/Civitech/Python/twitter_alert_bot/twitter_handles.csv')
+twitter_users = pd.read_csv('/repo/location/twitter_alert_bot/twitter_handles.csv')
 user_name = twitter_users['twitter_account']
 url = 'https://api.twitter.com/1.1/search/tweets.json?q=from%3Ahansilowang%20%22redistricting%22&result_type=recent'
 test_url = 'https://api.twitter.com/1.1/search/tweets.json?q=from%3ACmdr_Hadfield%20%23nasa&result_type=popular'
 
-command = f'twurl "{test_url}" -H "Authorization: Bearer AAAAAAAAAAAAAAAAAAAAAE2cMgEAAAAAxuksyrty6gvuuLMm6keHIr7cq8o%3DNMOcO1jCAKG4R22MPYQvFGJladaeGZDlPnUXDfNwj5HglKMJUS"'
+command = f'twurl "{test_url}" -H "Authorization: Bearer {bearer_token}"'
 command2 = f'twurl "{test_url}"'
 subprocess.check_output(command2, shell=True)
 print(command2)
@@ -27,7 +27,7 @@ print(command2)
 #     #print(directory)
 #     handle = user.split('/',3)
 #     last_portion = handle[3]
-#     command = f'curl "https://api.twitter.com/2/users/by/username/{last_portion}" -H "Authorization: Bearer AAAAAAAAAAAAAAAAAAAAAE2cMgEAAAAAxuksyrty6gvuuLMm6keHIr7cq8o%3DNMOcO1jCAKG4R22MPYQvFGJladaeGZDlPnUXDfNwj5HglKMJUS"'
+#     command = f'curl "https://api.twitter.com/2/users/by/username/{last_portion}" -H "Authorization: Bearer {bearer_token}"'
     # def append_list_as_row(file_name, list_of_elem):
     # with open(test_csv, 'a+', newline='') as wf:
     #     pulled_json = subprocess.check_output(command, shell=True)
