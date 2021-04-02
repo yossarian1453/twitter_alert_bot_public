@@ -3,11 +3,11 @@ import os
 import json
 import tweepy as tw
 
-consumer_key = 'bCs3KjDixkdgew0WrHXTGDPe1'
-consumer_secret = 'iCY2EIFUUOMzpAUEa7JXWYhu9xjg8gqXXp2rhacsAPGrqnaJ0Y'
-access_token = '1358710907006779398-ztYTwvVQyJWKRKOqF4IaeHwhzfmtpz'
-access_token_secret= 'cBqB48bge67Iysm10FJGqSdzo1WPkLrAu0HEjWfsPZ7mb'
-bearer_token = 'AAAAAAAAAAAAAAAAAAAAAE2cMgEAAAAAxuksyrty6gvuuLMm6keHIr7cq8o%3DNMOcO1jCAKG4R22MPYQvFGJladaeGZDlPnUXDfNwj5HglKMJUS'
+consumer_key = 'insert consumer key here'
+consumer_secret = 'insert consumer secret here'
+access_token = 'insert access token here'
+access_token_secret = 'insert access token secret here'
+bearer_token = 'insert bearer token here'
 
 
 # auth.set_access_token(access_token, access_token_secret)
