@@ -16,11 +16,11 @@ recorded_tweets = f'{file_path}/stage_1/tweets.csv'
 user_name = twitter_users['twitter_account']
 state = twitter_users['state']
 
-consumer_key = 'ney1nwRpY3gRxA5smXHdEEBQI'
-consumer_secret = 'cdQYAGpkvL0nXoqcqCBdPMhSWM0C4R1bvUTa1qkmAJ7CpACREO'
-access_token = '1358710907006779398-9phO9CQfaZMCxrJZ5LeSfFarfgi5jl'
-access_token_secret = 'hjTHd4GO97ndZw4AcBmxiCeDZAjOTRBtlc8nuB4s3MYAM'
-bearer_token = 'AAAAAAAAAAAAAAAAAAAAAE2cMgEAAAAA%2F09FeHOkK5mqers%2Fa32RLBOVkVk%3DFza0CBgM4qKFx81HDe28W6dJUHaimXCESmqYFEtmx2lRvtRfYK'
+consumer_key = 'insert consumer key here'
+consumer_secret = 'insert consumer secret here'
+access_token = 'insert access token here'
+access_token_secret = 'insert access token secret here'
+bearer_token = 'insert bearer token here'
 
 auth = tw.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
