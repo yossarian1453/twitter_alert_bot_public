@@ -1,0 +1,1 @@
+59 11 * * * /usr/local/bin/python3 /Users/robertness/Documents/Civitech/Python/twitter_alert_bot/twitter_alert_bot
